@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Hyperlinks</title>
+</head>
+
+<body>
+    <!-- basic Hyperlinks -->
+    <div class="basicHyperLinks">
+        <p>This link points to
+            <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Creating_hyperlinks">MDN
+                Docs</a>
+        </p>
+    </div>
+    <!-- using title attribute -->
+    <div class="titleHyperLinks">
+        <p>This link points to
+            <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Creating_hyperlinks"
+                title="this attribute helps in giving the extra info about the link">MDN Docs</a>
+        </p>
+        <!-- Hovering over the link displays the title as a tooltip -->
+    </div>
+    <!-- Block Level Links -->
+    <!-- Almost any element in the html document can be made into a link, even block level elements -->
+    <div class="blockLevelLinks">
+        <a href="https://www.mozilla.org/en-US/">
+            <img src="mozilla-image.png" alt="mozilla logo that links to the mozilla homepage">
+        </a>
+    </div>
+    <!-- Document Fragment Linking -->
+    <div class="docFragmentLinking">
+        <h2 id="Mailing_address">Mailing address</h2>
+        <p>Want to write us a letter? Use our <a href="contacts.html#Mailing_address">mailing address</a>.</p>
+    </div>
+    <!-- Download attribute -->
+    <!-- download attribute can be very useful to provide a default save filename -->
+    <div class="downloadHyperLinks">
+
+        <a href="https://download.mozilla.org/?product=firefox-latest-ssl&os=win64&lang=en-US"
+            download="firefox-latest-64bit-installer.exe">
+            Download Latest Firefox for Windows (64-bit) (English, US)
+        </a>
+    </div>
+    <br>
+    <!-- Email Links -->
+    <div class="emailLinks">
+        <a href="mailto:nowhere@mozilla.org">Send email to nowhere</a>
+        <!-- this would open up a new outgoing email message rather than linking to a new page/document -->
+
+        <!-- One can also provide the default field values -->
+        <a
+            href="mailto:nowhere@mozilla.org?cc=name2@rapidtables.com&bcc=name3@rapidtables.com&subject=The%20subject%20of%20the%20email&body=The%20body%20of%20the%20email">
+            Send mail with cc, bcc, subject and body
+        </a>
+
+    </div>
+
+</body>
+
+</html>
