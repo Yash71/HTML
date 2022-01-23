@@ -1,0 +1,81 @@
+<!-- login form -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+</head>
+
+<body>
+    <form action="results.html" method="GET">
+        <!-- this stores the entries in the form in results.html page-->
+        <!-- to render "post" requests we need to have server -->
+
+        <!-- text -->
+        <div>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="username" required>
+
+        </div>
+        <!-- passwords -->
+        <div>
+            <label for="password">Password</label>
+            <!-- if click on the label now, it would highlight the input area to which it is pointing-->
+            <input type="password" id="password" name="password" placeholder="password" required>
+        </div>
+        <!-- emails -->
+        <div>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required> <!-- creates an email input field-->
+        </div>
+        <!-- numbers -->
+        <div>
+            <label for="age">Age</label>
+            <input type="number" name="age" id="age" placeholder="age" min="1" max="140" step="5">
+        </div>
+        <!-- dates -->
+        <div>
+            <label for="date">Date</label>
+            <input type="date" name="date" id="date"> <!-- min and max also work for date type -->
+        </div>
+        <!-- Checkboxes -->
+        <div>
+            Favourite Food
+            <div>
+                <label for="banana">Banana</label>
+                <input type="checkbox" name="banana" id="banana">
+            </div>
+            <div>
+                <label for="apple">Apple</label>
+                <input type="checkbox" name="apple" id="apple">
+            </div>
+        </div>
+        <!-- Radio buttons -->
+        <div>
+            gender
+            <div>
+                <label for="male">Male</label>
+                <input type="radio" name="gender" id="gender" value="male">
+            </div>
+            <div>
+                <label for="female">Female</label>
+                <input type="radio" name="gender" id="gender" value="female">
+
+            </div>
+        </div>
+        <!-- options -->
+        <div>
+            <label for="eyeColor">Eye Color</label>
+            <select name="eyeColor" id="eyeColor">
+                <option value="Green">Green</option>
+                <option value="Red" label="Red"></option>
+            </select>
+        </div>
+        <button type="reset">Reset</button>
+        <button type="submit">submit</button>
+    </form>
+</body>
+</html>
